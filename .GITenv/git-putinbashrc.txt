@@ -1,0 +1,19 @@
+
+source ~/.GITenv/git-completion.bash
+
+# more colors!
+GREEN="\[\033[0;32m\]"
+BLUE="\[\033[0;34m\]"
+PURPLE="\[\033[0;35m\]"
+RESET="\[\033[0m\]"
+RED='\e[0;31m'
+BROWN='\e[0;33m'
+
+# PS1="[\u@\h \W]\\$ "
+# Change command prompt
+source ~/.GITenv/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+# '\u' adds the name of the current user to the prompt
+# '\$(__git_ps1)' adds git-related stuff
+# '\W' adds the name of the current directory
+export PS1="$BLUE\u@\h$RED\$(__git_ps1)$BROWN \W $ $RESET"

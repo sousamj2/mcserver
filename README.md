@@ -56,11 +56,14 @@ VM access / Manage access
 
 Create the templates
 
-Back in Instance templates, select template and click "+ Create VM" and on top "Create VM from..." / "Intance templates". Select the template and click "Create"
+Back in Instance templates, select template and click "+ Create VM" and on top "Create VM from..." / "Intance templates".
+
+Select the template and click "Create"
 
 ## SSHing to computer
 
 $ getginstances
+
 $ connectMySQL $1
 
 # Prepare the Server
