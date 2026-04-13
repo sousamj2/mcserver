@@ -58,6 +58,9 @@ alias cd,,='cd..'
 alias ..='cd..'
 alias ...='cd ../..'
 
+alias cdw="cd ~/mcserver/"
+alias cdm="cd /home/minecraft/"
+
 # Activate python enviromnent locally
 alias activate='source */bin/activate'
 

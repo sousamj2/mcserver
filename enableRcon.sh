@@ -10,6 +10,8 @@ sed -i -e 's/rcon.password=/rcon.password=${PASSWORD}/g' /home/minecraft/server.
 # 4. Download rcon
 wget https://github.com/Tiiffi/mcrcon/releases/download/v0.7.2/mcrcon-0.7.2-linux-x86-32.tar.gz
 
+tar xvf mcr*z
+
 # 5 sudo mv mcrcon
-sudo mv mcrcon /usr/local/bin/ && rm -f LICENSE
+sudo mv mcrcon /usr/local/bin/ && rm -f LICENSE mcr*z
 sudo chmod +x /usr/local/bin/mcrcon

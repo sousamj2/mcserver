@@ -99,6 +99,17 @@ $ ./startMC.sh
 
 ## Open PORT 25565 in GCP FIREWALL on this instance.
 
+### In GCP go to Menu / VPN network / Firewall
+
+* + CREATE FIREWALL RULE
+* Name: minecraft-rule
+* Target: Specific target tags
+* Target tags: minecraft-server (set from instance creation network configuration)
+* Source filter range: 0.0.0.0/0 (means from everywhere. You can consider using just specific IP addresses).
+* Protocols and ports: check "Specific protocols and ports", tick TCP and insert the 25565 port (default for minecraft)
+** If port is other than 25565, you need to add ":PORT" when connecting to the world (next section).
+
+
 ## Open minecraft and connect to your brand new server
 * Multiplayer / Direct Connection
 * Use EXTERNAL IPv4 comma 25565.
