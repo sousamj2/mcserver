@@ -2,7 +2,7 @@
 sudo mkdir -p /home/minecraft
 
 # 2. Change ownership of disk
-sudo chown $USER:$USER /home/Minecraft
+sudo chown $USER:$USER /home/minecraft
 
 # 3. Format disk
 lsblk -f # check if /dev/sd[ab] disk exists to format it
@@ -12,5 +12,4 @@ sudo mkfs.ext4 /dev/sda
 sudo mount /dev/sda /home/minecraft/
 df -h
 
-
-
+cd /home/minecraft

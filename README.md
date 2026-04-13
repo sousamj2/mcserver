@@ -68,11 +68,16 @@ $ connectMySQL $1
 
 # Prepare the Server
 
-## Mount the disk
-* See useExternalDisk.sh
-
 ## Update and install
 * See loadPackages.sh
+* $ git clone this repo
+* $ cd mcserver
+* $ cp -r .GITenv/ .emacs .bashrc ~
+* $ chmod +x *.sh
+
+## Mount the disk
+* See useExternalDisk.sh
+* $ cd /home/minecraft
 
 ## Get the MC Paper software
 * See getPaperMC.sh
