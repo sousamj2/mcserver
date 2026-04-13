@@ -13,3 +13,4 @@ sudo mount /dev/sda /home/minecraft/
 df -h
 
 cd /home/minecraft
+

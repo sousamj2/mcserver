@@ -93,6 +93,7 @@ $ ./startMC.sh
 
 ## Create automatic loading of server
 * See createService.sh
+** Requires $ sudo su
 
 ## Get the Minecraft Console (to /op a player, etc)
 * See console.sh
